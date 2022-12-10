@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--Set viewport-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Link external stylesheet-->
+        <link rel = "stylesheet" href ="styles.css">
+        <!--Link Fontawesome-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <!-- add icon link -->
+        <link rel = "icon" href = "google_logo.ico" type = "image/x-icon">
+        <!--Title of the webpage-->
+        <title>Google</title>
+    </head>
+    <body style="margin : 0;">
+        <main>
+            <nav class = "container navbar" style = "background-color: #F1F1F1; padding: 0 16px;">
+                <ul>
+                    <li class = "logo">
+                        <h1>
+                            <a href = "index.html">
+                                <span style='color: #4285f4'>G</span><!--
+                                --><span style='color: #ea4335'>o</span><!--
+                                --><span style='color: #fbbc05'>o</span><!--
+                                --><span style='color: #4285f4'>g</span><!--
+                                --><span style='color: #34a853'>l</span><!--
+                                --><span style='color: #ea4335'>e</span>
+                            </a>
+                        </h1>
+                    </li>
+                    <li class = "right-item"><a href = "index.html">Search</a></li>
+                    <li class = "right-item"><a href = "images.html">Images</a></li>
+                    <li><i class="fas fa-th"></i></li>
+                    <li><img src = "https://unsplash.it/400/400" alt = "Placeholder Logo"></li>
+                </ul>
+            </nav>
+            
+            <section class = "container advanced-input">
+                <h1>Advanced Search</h1>
+                <hr>
+                <!--"Find pages with..." section-->
+                <section>
+                    <form action = "https://google.com/search" class = "input-form">
+                        <div class = "form-group header">
+                            <h2>Find pages with...</h2>
+                            <div style="float: left; width: 70%;"></div>
+                            <div class="extra-info">
+                                <h2>To do this in the search box.</h2>
+                            </div>
+                        </div>
+                        <div class = "form-group">
+                            <label>all these words:</label>
+                            <input value="" autofocus name="as_q" type="text">
+                            <div class="extra-info">
+                                Type the important words:
+                                <span>tri-colour rat terrier</span>
+                            </div>
+                        </div>
+                        <div class = "form-group">
+                            <label>this exact word or phrase:</label>
+                            <input value="" autofocus name="as_epq" type="text">
+                            <div class="extra-info">
+                                Put exact words in quotes:
+                                <span>"rat terrier"</span>
+                            </div>
+                        </div>
+                        <div class = "form-group">
+                            <label>any of these words:</label>
+                            <input value="" autofocus name="as_oq" type="text">
+                            <div class="extra-info">
+                                Type 
+                                <span>OR</span> between all the words you want: 
+                                <span>miniature OR standard</span>
+                            </div>
+                        </div>
+                        <div class = "form-group">
+                            <label>none of these words:</label>
+                            <input value="" autofocus name="as_eq" type="text">
+                            <div class="extra-info">
+                                Put a minus sign just before words that you don't want: 
+                                <span>-rodent, -"Jack Russell"</span>
+                            </div>
+                        </div>
+                        <div class = "form-group">
+                            <label>numbers ranging from:</label>
+                            <input value="" autofocus name="as_nlo" type="text">
+                            <span class = "span-or">or</span>
+                            <input value="" autofocus name="as_nhi" type="text">
+                            <div class="extra-info">
+                                Put two full stops between the numbers and add a unit of measurement: 
+                                <span>10..35 kg, £300..£500, 2010..2011</span>
+                            </div>
+                        </div>
+                        <div class = "form-group submit-button-section">
+                            <div style="float: left; min-width: 180px;"></div>
+                            <div class = "submit-button">
+                                <input type = "submit" value = "Advanced Search">
+                            </div>
+                            <div style="float: left; min-width: 30%;"></div>
+                        </div>
+                    </form>
+                </section>
+            </section>
+        </main>
+    </body>
+</html>

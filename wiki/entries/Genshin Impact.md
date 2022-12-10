@@ -1,0 +1,2 @@
+#Genshin impact
+Genshin Impact is an action role-playing game developed and published by miHoYo. It was released for Microsoft Windows, PlayStation 4, Android, and iOS in September 2020, PlayStation 5 in April 2021, and is planned for future release on Nintendo Switch. The game features an anime style open-world environment and an action-based battle system. The game is free-to-play and is monetized through gacha game mechanics. While developed after Honkai Impact 3rd (2016) with a similar naming scheme, Genshin Impact is not a sequel.

@@ -1,0 +1,26 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    Create a new page
+{% endblock %}
+
+{% block body %}
+    <h1>Create New Page</h1>
+    {% if message %}
+        <div class="alert alert-danger" style="text-align: center;" role="alert">
+            {{message}}
+        </div>
+    {% endif %}
+    <form action = "{% url 'encyclopedia:create' %}" method = "post">
+        {% csrf_token %}
+        <div class="form_group">
+            <label for="title" style = "display: block;">Title:</label>
+            <input type = "text" name = "title" placeholder = "Title of the page">
+        </div>
+        <div class="form_group">
+            <label for = "content" style = "display: block;">Content:</label>
+            <textarea name = "content" placeholder = "Insert your content here"></textarea>
+        </div>
+        <input type="submit">
+    </form>
+{% endblock %}

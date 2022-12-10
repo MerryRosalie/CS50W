@@ -1,0 +1,23 @@
+{% extends "auctions/layout.html" %}
+
+{% block body %}
+
+<section>
+    <div class="item-info">
+        <img src = "{{ item.image }}">
+        <div class="item-info-desc">
+            <h2>{{ item.name }}</h2>
+            <P>{{ category }}</P>
+            <p>
+                Starting bid: <strong>${{ item.start_price }}</strong>
+                |
+                Highest bid: <strong>{{ highest_bid }}</strong>
+            </p>
+            <p> {{ item.description }}</p>
+            <p>Listed by: <strong>{{ item.auctioneer.username }}</strong>, {{ item.start_time }}</p>
+            <a href="{% url 'item' item.id %}" class="btn">Place Bid</a>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

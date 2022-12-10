@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--Set viewport-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Link external stylesheet-->
+        <link rel = "stylesheet" href ="styles.css">
+        <!--Link Fontawesome-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <!-- add icon link -->
+        <link rel = "icon" href = "google_logo.ico" type = "image/x-icon">
+        <!--Title of the webpage-->
+        <title>Google</title>
+    </head>
+    <body>
+        <main>
+            <nav class = "container navbar">
+                <ul>
+                    <li class = "right-item"><a href = "advanced.html">Advanced</a></li>
+                    <li class = "right-item"><a href = "index.html">Search</a></li>
+                    <li><i class="fas fa-th"></i></li>
+                    <li><img src = "https://unsplash.it/400/400" alt = "Placeholder Logo"></li>
+                </ul>
+            </nav>
+            <section class = "container main-content">
+                <div class = "images-logo">
+                    <a href = "javascript:window.location.reload(true)">
+                        <h1>
+                            <span style='color: #4285f4'>G</span><!--
+                            --><span style='color: #ea4335'>o</span><!--
+                            --><span style='color: #fbbc05'>o</span><!--
+                            --><span style='color: #4285f4'>g</span><!--
+                            --><span style='color: #34a853'>l</span><!--
+                            --><span style='color: #ea4335'>e</span>
+                        </h1>
+                    </a>
+                </div>
+                <div>
+                    <form action="https://google.com/search">
+                        <div class = "query">
+                            <input type="text" name="q" id = "q" autocomplete="off" placeholder = "Search Google or type URL">
+                            <input hidden= "true" name="tbm" value="isch">
+                            <span><i class="fas fa-camera"></i></span>
+                            <input type="submit" class = "fa" value = "&#xf002">
+                        </div>
+                        <div class = "button-lists">
+                            <ul class = "button-lists">
+                                <li>
+                                    <a href = "index.html">
+                                        <input type = "submit" value = "Google Search"></button>
+                                    </a>
+                                </li>
+                                <li>
+                                    <input type = "submit" name = "btnI" value = "I'm Feeling Lucky"></button>
+                                </li>
+                            </ul>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>

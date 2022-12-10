@@ -1,0 +1,27 @@
+{% extends "encyclopedia/layout.html" %}
+{% load static %}
+
+{% block title %}
+    Encyclopedia
+{% endblock %}
+
+{% block body %}
+    <section class = "title-banner">
+        <div class = "title-banner-item">
+            <h1>Welcome to Wikipedia,</h1>
+            <p>the free encyclopedia that anyone can edit.</p>
+        </div>
+        <div class = "title-banner-item">
+            <img class = "logo" src = "{% static 'encyclopedia/logo.png' %}">
+        </div>
+    </section>
+    <section class = "table-of-contents">
+        <h1>All Pages</h1>
+        <ul>
+            {% for entry in entries %}
+                <li><a href = "{% url 'encyclopedia:entry' entry %}">{{ entry }}</a></li>
+            {% endfor %}
+        </ul>
+    </section>
+
+{% endblock %}

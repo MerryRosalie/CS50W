@@ -1,0 +1,27 @@
+{% extends "auctions/layout.html" %}
+
+{% block body %}
+    <section>
+    <h1>Active Listings</h1>
+        {% if active_listings %}
+        <div class="catalogue">
+            {% for item in active_listings %}
+                <div class="card">
+                    <a href="{% url 'item' item.id %}">
+                    <img class="card-img-top" src="{{ item.image }}" alt="{{ item.name }}">
+                        <div class="card-body">
+                            <h5 class="title">{{ item.name }}</h5>
+                            <p class="description">{{ item.description}}</p>
+                            <p class="price">
+                                Starting bid: <strong>${{ item.start_price }}</strong>
+                            </p>
+                        </div>
+                    </a>
+                </div>
+            {% endfor %}
+        </div>
+        {% else %}
+            <h2>No active listings available.</h2>
+        {% endif %}
+    </section>
+{% endblock %}
